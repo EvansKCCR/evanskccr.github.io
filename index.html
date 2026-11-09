@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="gFUFpt758JYcYrTgXXClX9mncqXUtRi1PRnjrYZKOCc">
+  <meta name="description" content="EvansKCCR public research project index and Google site-verification page.">
+  <title>EvansKCCR Research Projects</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1d2733;
+      --muted: #56616d;
+      --red: #9e1b32;
+      --red-dark: #61101f;
+      --gold: #e2b93b;
+      --paper: #fffdf8;
+      --line: #eadfd8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(226,185,59,.16), transparent 34rem),
+        linear-gradient(135deg, #fff 0%, var(--paper) 100%);
+    }
+    .bar {
+      height: .45rem;
+      background: linear-gradient(90deg, #14833b 0 24%, var(--gold) 24% 48%, #c92939 48% 72%, #fff 72% 84%, #111 84%);
+    }
+    main {
+      width: min(920px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: clamp(3rem, 8vw, 7rem) 0 4rem;
+    }
+    .eyebrow {
+      color: var(--red);
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-size: .78rem;
+    }
+    h1 {
+      max-width: 760px;
+      margin: .7rem 0 1rem;
+      font-size: clamp(2.4rem, 7vw, 5.1rem);
+      line-height: .98;
+      letter-spacing: -.055em;
+    }
+    .intro {
+      max-width: 690px;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.2vw, 1.23rem);
+      line-height: 1.7;
+    }
+    .card {
+      margin-top: 2.4rem;
+      padding: clamp(1.4rem, 4vw, 2.3rem);
+      border: 1px solid var(--line);
+      border-left: .42rem solid var(--red);
+      border-radius: 1rem;
+      background: rgba(255,255,255,.9);
+      box-shadow: 0 18px 55px rgba(46,22,20,.08);
+    }
+    h2 { margin: 0 0 .65rem; font-size: clamp(1.45rem, 3vw, 2rem); }
+    .card p { color: var(--muted); line-height: 1.65; }
+    .actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.3rem; }
+    a.button {
+      display: inline-block;
+      padding: .8rem 1.05rem;
+      border-radius: .6rem;
+      text-decoration: none;
+      font-weight: 750;
+      border: 1px solid var(--red);
+    }
+    a.primary { color: #fff; background: linear-gradient(135deg, var(--red), var(--red-dark)); }
+    a.secondary { color: var(--red-dark); background: #fff; }
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="bar" aria-hidden="true"></div>
+  <main>
+    <p class="eyebrow">EvansKCCR · Research Applications</p>
+    <h1>Public research project index</h1>
+    <p class="intro">This root site identifies the public web presence used by EvansKCCR research applications and provides direct access to their public information and privacy documentation.</p>
+
+    <section class="card" aria-labelledby="dare-arbo-title">
+      <h2 id="dare-arbo-title">DARE-Arbo</h2>
+      <p>A collaborative study developing a framework for transparent appraisal of arbovirus surveillance and seroepidemiological evidence.</p>
+      <div class="actions">
+        <a class="button primary" href="/DARE-Arbo/">Open DARE-Arbo project page</a>
+        <a class="button secondary" href="/DARE-Arbo/privacy.html">Read the privacy policy</a>
+      </div>
+    </section>
+
+    <footer>Public site-verification and project-index page for EvansKCCR.</footer>
+  </main>
+</body>
+</html>
