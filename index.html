@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="gFUFpt758JYcYrTgXXClX9mncqXUtRi1PRnjrYZKOCc">
-  <meta name="description" content="EvansKCCR public research project index and Google site-verification page.">
-  <title>EvansKCCR Research Projects</title>
+  <meta name="description" content="DARE-Arbo develops a transparent framework and digital quality-appraisal tool for arbovirus surveillance and seroepidemiological evidence.">
+  <title>DARE-Arbo | Arbovirus Evidence Quality Appraisal</title>
   <style>
     :root {
       color-scheme: light;
@@ -13,7 +13,8 @@
       --muted: #56616d;
       --red: #9e1b32;
       --red-dark: #61101f;
-      --gold: #e2b93b;
+      --gold: #cf9e18;
+      --green: #16733c;
       --paper: #fffdf8;
       --line: #eadfd8;
     }
@@ -32,7 +33,7 @@
       background: linear-gradient(90deg, #14833b 0 24%, var(--gold) 24% 48%, #c92939 48% 72%, #fff 72% 84%, #111 84%);
     }
     main {
-      width: min(920px, calc(100% - 2rem));
+      width: min(1040px, calc(100% - 2rem));
       margin: 0 auto;
       padding: clamp(3rem, 8vw, 7rem) 0 4rem;
     }
@@ -56,6 +57,7 @@
       font-size: clamp(1rem, 2.2vw, 1.23rem);
       line-height: 1.7;
     }
+    .hero { max-width: 800px; }
     .card {
       margin-top: 2.4rem;
       padding: clamp(1.4rem, 4vw, 2.3rem);
@@ -67,6 +69,38 @@
     }
     h2 { margin: 0 0 .65rem; font-size: clamp(1.45rem, 3vw, 2rem); }
     .card p { color: var(--muted); line-height: 1.65; }
+    .card h3 { margin: .35rem 0 .5rem; font-size: 1.2rem; }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .access-card {
+      padding: 1.25rem;
+      border: 1px solid var(--line);
+      border-radius: .8rem;
+      background: #fff;
+    }
+    .badge {
+      display: inline-block;
+      padding: .32rem .58rem;
+      border-radius: 999px;
+      font-size: .74rem;
+      font-weight: 850;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .badge.open { color: #fff; background: var(--green); }
+    .badge.restricted { color: #fff; background: var(--red-dark); }
+    .privacy-note {
+      margin-top: 1.4rem;
+      padding: 1rem 1.1rem;
+      border-radius: .75rem;
+      background: #f7f2e8;
+      color: var(--muted);
+      line-height: 1.65;
+    }
     .actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.3rem; }
     a.button {
       display: inline-block;
@@ -78,6 +112,7 @@
     }
     a.primary { color: #fff; background: linear-gradient(135deg, var(--red), var(--red-dark)); }
     a.secondary { color: var(--red-dark); background: #fff; }
+    a.text-link { color: var(--red-dark); font-weight: 750; }
     footer {
       margin-top: 3.5rem;
       padding-top: 1.2rem;
@@ -85,25 +120,48 @@
       color: var(--muted);
       font-size: .9rem;
     }
+    @media (max-width: 700px) {
+      .card-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
   <div class="bar" aria-hidden="true"></div>
   <main>
-    <p class="eyebrow">EvansKCCR · Research Applications</p>
-    <h1>Public research project index</h1>
-    <p class="intro">This root site identifies the public web presence used by EvansKCCR research applications and provides direct access to their public information and privacy documentation.</p>
+    <div class="hero">
+      <p class="eyebrow">DARE-Arbo · Evidence Quality Appraisal</p>
+      <h1>Transparent appraisal of arbovirus evidence</h1>
+      <p class="intro">DARE-Arbo is a collaborative study developing a structured framework and digital tool for appraising the quality of arbovirus surveillance and seroepidemiological evidence. The public appraisal tool is open to all visitors; study coordination materials are limited to approved collaborators.</p>
+    </div>
 
     <section class="card" aria-labelledby="dare-arbo-title">
-      <h2 id="dare-arbo-title">DARE-Arbo</h2>
-      <p>A collaborative study developing a framework for transparent appraisal of arbovirus surveillance and seroepidemiological evidence.</p>
-      <div class="actions">
-        <a class="button primary" href="/DARE-Arbo/">Open DARE-Arbo project page</a>
-        <a class="button secondary" href="/DARE-Arbo/privacy.html">Read the privacy policy</a>
+      <h2 id="dare-arbo-title">Choose your destination</h2>
+      <div class="card-grid">
+        <article class="access-card">
+          <span class="badge open">Open access</span>
+          <h3>DARE-Arbo quality-appraisal tool</h3>
+          <p>Explore and apply the quality-appraisal workflow without signing in or authorizing access to Google data.</p>
+          <div class="actions">
+            <a class="button primary" href="https://dare-arbo-3gdxlreojotdajtcsf5epr.streamlit.app/">Open the public tool</a>
+          </div>
+        </article>
+
+        <article class="access-card">
+          <span class="badge restricted">Authorized access</span>
+          <h3>Project collaborator workspace</h3>
+          <p>Approved administrators and collaborators can access project documents, assignments, meetings and study-management tools.</p>
+          <div class="actions">
+            <a class="button secondary" href="https://dare-arbo-gxsla2u2vugc8gnsjyessi.streamlit.app/">Collaborator sign-in</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="privacy-note">
+        <strong>How Google data are used:</strong> the public quality-appraisal tool does not require Google authorization. Within the restricted workspace, approved users may authorize access needed to read or update designated DARE-Arbo project files and task records. Access is limited to project functions and governed by the published <a class="text-link" href="/DARE-Arbo/privacy.html">DARE-Arbo privacy policy</a>.
       </div>
     </section>
 
-    <footer>Public site-verification and project-index page for EvansKCCR.</footer>
+    <footer>DARE-Arbo public information page · <a class="text-link" href="/DARE-Arbo/privacy.html">Privacy policy</a> · Coordinated through EvansKCCR research applications.</footer>
   </main>
 </body>
 </html>
